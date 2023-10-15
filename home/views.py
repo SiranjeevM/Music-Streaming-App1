@@ -37,7 +37,7 @@ def createuser(request):
     if password1 == password2:
         load = user(username = users,password1 = password1,email = email)
         load.save()
-        return redirect('   home:login')
+        return redirect('home:login')
     else:
         return HttpResponse("password are not match")
 
